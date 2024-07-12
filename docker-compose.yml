@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cache_tv_show_webhook:
+    build: .
+    ports:
+      - "6969:6969"
+    volumes:
+      - /DATA:/DATA
+    environment:
+      - FLASK_ENV=development
+    restart: always
